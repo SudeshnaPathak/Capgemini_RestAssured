@@ -25,6 +25,7 @@ public class ShopperProfile extends BaseClass{
 		.when()
 			.get("/shoppers/{shopperId}");
 		
+		//Response Headers, Status Code & Status Line Validation
 		res.then()
 			.assertThat().statusCode(200)
 			.assertThat().statusLine("HTTP/1.1 200 ")
@@ -43,10 +44,8 @@ public class ShopperProfile extends BaseClass{
 	@Test(dependsOnMethods="fetchProfile")
 	public void updateProfile()
 	{
-		// First get the JsonPath object instance from the Response interface
 		Map<String, String> profile = res.jsonPath().getMap("data");
 		
-		// Then simply query the JsonPath object to get a String value of the node
 		ProfileUpdatePojo payload = new ProfileUpdatePojo(
 				profile.get("city"),
 				profile.get("state"),
