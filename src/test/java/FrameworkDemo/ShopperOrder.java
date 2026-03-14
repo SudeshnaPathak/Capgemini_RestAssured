@@ -13,10 +13,11 @@ import java.io.IOException;
 
 public class ShopperOrder extends BaseClass{
     Response res;
+    AddressPojo adr;
 	@Test
 	public void addAddress()
 	{
-		AddressPojo adr = new AddressPojo(
+		adr = new AddressPojo(
 		        1,
 		        "Flat 302, Sunrise Apartments",
 		        "Patna",
@@ -52,7 +53,7 @@ public class ShopperOrder extends BaseClass{
 	@Test(dependsOnMethods={"addAddress", "FrameworkDemo.ShopperCart.addProductToCart"})
 	public void placeOrder()
 	{
-		AddressPojo adr = res.jsonPath().getObject("data", AddressPojo.class);
+		adr = res.jsonPath().getObject("data", AddressPojo.class);
 		OrderRequestPojo odr = new OrderRequestPojo( adr , "COD");
 		
 		res = given()

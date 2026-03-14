@@ -29,8 +29,10 @@ public class ProductViewActions extends BaseClass{
 		List<Integer> quantities = res.path("data.quantity");
 		int min = 0 , max = productIds.size();
 		int idx = (int) (Math.random() * (max - min)) + min;
+		
 		productId = productIds.get(idx);
 		quantity = quantities.get(idx);
+		System.out.println(idx);
 		System.out.println(productId);
 		
 		res.then()

@@ -1,6 +1,7 @@
 package FrameworkDemo;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
 import java.util.Map;
 
@@ -31,7 +32,9 @@ public class ShopperProfile extends BaseClass{
 			.assertThat().statusCode(200)
 			.assertThat().statusLine("HTTP/1.1 200 ")
 			.assertThat().header("Server", "nginx")
-			.assertThat().header("Content-Type", "application/json");
+			.assertThat().header("Content-Type", "application/json")
+			.assertThat().body("data.userId", equalTo(shopperId))
+			.assertThat().body("data.status", equalTo("ACTIVE"));
 		
 		Headers headers = res.headers();
 		for(Header header : headers)

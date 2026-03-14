@@ -366,7 +366,7 @@
             "name": "airpods",
             "title": "Apple AirPods (2nd Generation)",
             "description": "\nBrand\tApple\nColour\tWhite\nCompatible Devices\tHeadphones\nForm Factor\tCase\nMaterial\tPlastic\nAbout this item\nAutomatically on, automatically connected\nEasy setup for all your Apple devices\nQuick access to Siri by saying “Hey Siri”\nDouble-tap to play or skip forward\nNew Apple H1 headphone chip delivers faster wireless connection to your devices\nCharges quickly in the case\nCase can be charged using the Lightning connector\nRich, high-quality audio and voice\nListen and talk all day with multiple charges from the Charging Case",
-            "rating": 3.8,
+            "rating": 4.0,
             "price": 15000.0,
             "offer": 30.0,
             "type": "headphones",
@@ -416,15 +416,6 @@
                     "description": "excellent",
                     "rating": 5.0,
                     "dateTime": "2025-04-08T11:34:50.308"
-                },
-                {
-                    "reviewId": 18418,
-                    "shopperId": 236289,
-                    "shopperName": "karthik karthi",
-                    "heading": "good",
-                    "description": "not bad",
-                    "rating": 2.0,
-                    "dateTime": "2025-04-09T10:59:43.572"
                 },
                 {
                     "reviewId": 23683,
@@ -1430,7 +1421,7 @@
             "name": "samsung ",
             "title": "samsung s20 fan edition",
             "description": "Bran--Samsung\nModel Name\tSamsung Galaxy S20 FE 5G\nNetwork Service Provider\tVoiceStream Wireless Provider Type\nOperating System\tAndroid 11.0\nCellular Technology\t5GB",
-            "rating": 2.6,
+            "rating": 3.4,
             "price": 1000000.0,
             "offer": 59.0,
             "type": "mobile",
