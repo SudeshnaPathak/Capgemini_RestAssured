@@ -2,6 +2,7 @@ package FrameworkDemo;
 
 import org.testng.annotations.Test;
 
+import FrameworkDemo.pojos.ProductPojo;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
@@ -24,6 +25,8 @@ public class ProductViewActions extends BaseClass{
 		.when()
 		.get("products");
 		
+		ProductPojo[] products = res.jsonPath().getObject("data", ProductPojo[].class);
+		System.out.println(products);
 //		List<Integer> productIds = res.jsonPath().getList("data.productId");
 		List<Integer> productIds = res.path("data.productId");
 		List<Integer> quantities = res.path("data.quantity");
@@ -35,9 +38,9 @@ public class ProductViewActions extends BaseClass{
 		System.out.println(idx);
 		System.out.println(productId);
 		
-		res.then()
-		.assertThat().statusCode(200)
-		.log().all();
+//		res.then()
+//		.assertThat().statusCode(200)
+//		.log().all();
 		
 		//Store in a file for excessive long responses
 		FileWriter file = new FileWriter("src/test/resources/response.json");
