@@ -34,15 +34,6 @@
             ],
             "reviews": [
                 {
-                    "reviewId": 10937,
-                    "shopperId": 110385,
-                    "shopperName": "Bhaskar Kiran Tandai",
-                    "heading": "WORST PRODUCT..!!! VERY UPSET as this didn't work for one day also :(",
-                    "description": "WORST OF THE WORST PRODUCT !!!! RIDICULOUS..!!! DISGUISTING..!!!",
-                    "rating": 1.0,
-                    "dateTime": "2024-08-23T21:20:55.541"
-                },
-                {
                     "reviewId": 22134,
                     "shopperId": 286680,
                     "shopperName": "abcdef dffghj",
@@ -131,6 +122,15 @@
                     "description": "Good product",
                     "rating": 3.6,
                     "dateTime": "2026-03-12T16:42:54.861"
+                },
+                {
+                    "reviewId": 27848,
+                    "shopperId": 110385,
+                    "shopperName": "Bhaskar Kiran Tandai",
+                    "heading": "WORST PRODUCT..!!! VERY UPSET as this didn't work for one day also :(",
+                    "description": "WORST OF THE WORST PRODUCT !!!! RIDICULOUS..!!! DISGUISTING..!!!",
+                    "rating": 1.0,
+                    "dateTime": "2026-03-17T10:59:19.63"
                 }
             ],
             "createdDateTime": "2023-09-13T12:24:38.064",
@@ -553,7 +553,7 @@
             "name": "nykaa matte ",
             "title": "nykaa chai",
             "description": "\nBrand\tNykaa\nColour\t18 Chai\nSkin Type\tNormal\nItem Form\tLiquid\nFinish Type\tMatte\nProduct Benefits\tSoftening\nSpecial Ingredients\tVitamin E\nMaterial Type Free\tParaben Free\nCoverage\tFull\nSpeciality\tFree",
-            "rating": 3.7,
+            "rating": 4.1,
             "price": 675.0,
             "offer": 10.0,
             "type": "lipstick",
@@ -1196,7 +1196,7 @@
             "name": "Moisturiser Lumi Cream",
             "title": "Lakme Lumi Cream",
             "description": "\nBrand\tLAKMÉ\nScent\tUnscented \nItem Form\tCream\nActive Ingredients\tGlycerin,hyaluronic acid,niacinamide,sodium hyaluronate,sodium triglyceride,vitamin b3\nNet Quantity\t30.0 gram\nNumber of Items\t1\nUse for\tFace\nSkin Type\tNormal\nSpecial Ingredients\tGlycerin\nMaterial Type Free\tAlcohol Free\nSee less\nAbout this item\nLight weight moisturizing cream\nHint of highlighter\n3D glow\nHighlights your features\nNon greasy formula\nBlends like a dream",
-            "rating": 3.4,
+            "rating": 4.2,
             "price": 250.0,
             "offer": 10.0,
             "type": "cream",
@@ -1282,6 +1282,15 @@
                     "description": "nice",
                     "rating": 5.0,
                     "dateTime": "2026-03-10T16:04:19.16"
+                },
+                {
+                    "reviewId": 27847,
+                    "shopperId": 280406,
+                    "shopperName": "suma",
+                    "heading": "amaazing",
+                    "description": "good product",
+                    "rating": 5.0,
+                    "dateTime": "2026-03-16T16:32:57.518"
                 }
             ],
             "createdDateTime": null,
@@ -8764,15 +8773,7 @@
                 "guitar"
             ],
             "reviews": [
-                {
-                    "reviewId": 25694,
-                    "shopperId": 343144,
-                    "shopperName": "Punith Nag",
-                    "heading": "Yamaha",
-                    "description": "Good",
-                    "rating": 5.0,
-                    "dateTime": "2026-01-23T18:23:16.581"
-                }
+                
             ],
             "createdDateTime": "2023-09-21T10:41:07.983",
             "zoneId": "ALPHA"
@@ -18639,6 +18640,35 @@
             ],
             "reviews": null,
             "createdDateTime": "2026-03-12T16:00:58.599",
+            "zoneId": "ALPHA"
+        },
+        {
+            "productId": 20702,
+            "name": "Galaxy S26 Ultra",
+            "title": "Galaxy S26 Ultra",
+            "description": "Pay only 50% of device price in 12 EMI's at no extra cost\n- No Questions asked return after one year\n- Enjoy Samsung Care+ protection worth ₹ 13999",
+            "rating": 0.0,
+            "price": 100000.0,
+            "offer": 10.0,
+            "type": "mobile",
+            "brand": "galaxy",
+            "category": "electronics",
+            "merchantId": 371253,
+            "quantity": 40,
+            "status": "ACTIVE",
+            "thumbnailURL": "https://images.samsung.com/in/smartphones/galaxy-s26-ultra/buy/kv_group_Tablet.jpg?imbypass=true",
+            "productImageURLs": [
+                "https://images.samsung.com/is/image/samsung/assets/in/Ecosystem_PC_1600x864.jpg?imbypass=true",
+                "https://images.samsung.com/in/smartphones/galaxy-s26-ultra/buy/kv_singleKV_Tablet_in.jpg?imbypass=true",
+                "https://images.samsung.com/in/smartphones/galaxy-s26-ultra/buy/kv_group_Tablet.jpg?imbypass=true"
+            ],
+            "searchTags": [
+                "galaxy",
+                "phones",
+                "mobiles"
+            ],
+            "reviews": null,
+            "createdDateTime": "2026-03-16T08:59:47.076",
             "zoneId": "ALPHA"
         }
     ]

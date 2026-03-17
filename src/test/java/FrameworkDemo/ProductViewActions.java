@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 public class ProductViewActions extends BaseClass{
@@ -25,8 +26,8 @@ public class ProductViewActions extends BaseClass{
 		.when()
 		.get("products");
 		
-		List<ProductPojo> products = res.jsonPath().getList("data", ProductPojo.class);
-		System.out.println(products);
+		ProductPojo[] products = res.jsonPath().getObject("data", ProductPojo[].class);
+		System.out.println(Arrays.toString(products));
 //		List<Integer> productIds = res.jsonPath().getList("data.productId");
 		List<Integer> productIds = res.path("data.productId");
 		List<Integer> quantities = res.path("data.quantity");
@@ -38,9 +39,9 @@ public class ProductViewActions extends BaseClass{
 		System.out.println(idx);
 		System.out.println(productId);
 		
-//		res.then()
-//		.assertThat().statusCode(200)
-//		.log().all();
+		res.then()
+		.assertThat().statusCode(200)
+		.log().all();
 		
 		//Store in a file for excessive long responses
 		FileWriter file = new FileWriter("src/test/resources/response.json");
