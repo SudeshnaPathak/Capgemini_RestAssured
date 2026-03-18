@@ -2,16 +2,14 @@ package FrameworkDemo;
 
 import static io.restassured.RestAssured.given;
 
-import java.util.HashMap;
 
 import org.testng.annotations.BeforeClass;
 
 import FrameworkDemo.pojos.ShopperLoginPojo;
+import dataUtils.ReadDataFromPropertiesFile;
 import io.restassured.response.Response;
 
-public class BaseClass {
-	public static String baseUrl = "https://www.shoppersstack.com/shopping";
-	public static String zoneId = "alpha";
+public class BaseClass extends ReadDataFromPropertiesFile{
 	public static String accessToken;
 	public static int shopperId;
 	public static int productId;
@@ -23,9 +21,10 @@ public class BaseClass {
 	@BeforeClass
 	public void login()
 	{
-		ShopperLoginPojo body = new ShopperLoginPojo("pathaksudeshna92@gmail.com", "Sudeshna@123", "SHOPPER");
+		ShopperLoginPojo body = new ShopperLoginPojo(email, password , role);
 		
 		Response res = given()
+				.log().all()
 				.contentType("application/json")
 				.relaxedHTTPSValidation() //allows to access the server
 				.body(body)

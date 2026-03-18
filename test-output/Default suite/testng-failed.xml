@@ -3,26 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FrameworkDemo.ShopperOrder">
-        <methods>
-          <include name="generateInvoice"/>
-          <include name="login"/>
-          <include name="placeOrder"/>
-          <include name="addAddress"/>
-        </methods>
-      </class> <!-- FrameworkDemo.ShopperOrder -->
-      <class name="FrameworkDemo.ShopperCart">
+      <class name="FrameworkDemo.BaseClass">
         <methods>
           <include name="login"/>
-          <include name="addProductToCart"/>
+          <include name="fetchData"/>
         </methods>
-      </class> <!-- FrameworkDemo.ShopperCart -->
-      <class name="FrameworkDemo.ProductViewActions">
-        <methods>
-          <include name="fetchAllProducts"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- FrameworkDemo.ProductViewActions -->
+      </class> <!-- FrameworkDemo.BaseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

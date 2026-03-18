@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-17T15:08:34 IST" name="Default suite" finished-at="2026-03-17T15:08:51 IST" duration-ms="16836">
+  <suite started-at="2026-03-18T10:10:35 IST" name="Default suite" finished-at="2026-03-18T10:10:41 IST" duration-ms="5947">
     <groups>
     </groups>
-    <test started-at="2026-03-17T15:08:34 IST" name="Default test" finished-at="2026-03-17T15:08:51 IST" duration-ms="16836">
-      <class name="FrameworkDemo.ShopperCart">
-        <test-method is-config="true" signature="login()[pri:0, instance:FrameworkDemo.ShopperCart@78691363]" started-at="2026-03-17T15:08:45 IST" name="login" finished-at="2026-03-17T15:08:47 IST" duration-ms="1738" status="PASS">
+    <test started-at="2026-03-18T10:10:35 IST" name="Default test" finished-at="2026-03-18T10:10:41 IST" duration-ms="5947">
+      <class name="FrameworkDemo.BaseClass">
+        <test-method is-config="true" signature="fetchData()[pri:0, instance:FrameworkDemo.BaseClass@4218d6a3]" started-at="2026-03-18T10:10:35 IST" name="fetchData" finished-at="2026-03-18T10:10:35 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchData -->
+        <test-method signature="login()[pri:0, instance:FrameworkDemo.BaseClass@4218d6a3]" started-at="2026-03-18T10:10:35 IST" name="login" finished-at="2026-03-18T10:10:41 IST" duration-ms="5884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addProductToCart()[pri:0, instance:FrameworkDemo.ShopperCart@78691363]" started-at="2026-03-17T15:08:47 IST" name="addProductToCart" finished-at="2026-03-17T15:08:47 IST" depends-on-methods="FrameworkDemo.ProductViewActions.fetchAllProducts" duration-ms="793" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addProductToCart -->
-      </class> <!-- FrameworkDemo.ShopperCart -->
-      <class name="FrameworkDemo.ShopperOrder">
-        <test-method is-config="true" signature="login()[pri:0, instance:FrameworkDemo.ShopperOrder@5fe94a96]" started-at="2026-03-17T15:08:47 IST" name="login" finished-at="2026-03-17T15:08:48 IST" duration-ms="811" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="addAddress()[pri:0, instance:FrameworkDemo.ShopperOrder@5fe94a96]" started-at="2026-03-17T15:08:48 IST" name="addAddress" finished-at="2026-03-17T15:08:49 IST" duration-ms="708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addAddress -->
-        <test-method signature="placeOrder()[pri:0, instance:FrameworkDemo.ShopperOrder@5fe94a96]" started-at="2026-03-17T15:08:49 IST" name="placeOrder" finished-at="2026-03-17T15:08:50 IST" depends-on-methods="FrameworkDemo.ShopperCart.addProductToCart, FrameworkDemo.ShopperOrder.addAddress" duration-ms="813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placeOrder -->
-        <test-method signature="generateInvoice()[pri:0, instance:FrameworkDemo.ShopperOrder@5fe94a96]" started-at="2026-03-17T15:08:50 IST" name="generateInvoice" finished-at="2026-03-17T15:08:51 IST" depends-on-methods="FrameworkDemo.ShopperOrder.placeOrder" duration-ms="900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateInvoice -->
-      </class> <!-- FrameworkDemo.ShopperOrder -->
-      <class name="FrameworkDemo.ProductViewActions">
-        <test-method is-config="true" signature="login()[pri:0, instance:FrameworkDemo.ProductViewActions@639c2c1d]" started-at="2026-03-17T15:08:34 IST" name="login" finished-at="2026-03-17T15:08:41 IST" duration-ms="7207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="fetchAllProducts()[pri:0, instance:FrameworkDemo.ProductViewActions@639c2c1d]" started-at="2026-03-17T15:08:41 IST" name="fetchAllProducts" finished-at="2026-03-17T15:08:45 IST" duration-ms="3739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fetchAllProducts -->
-      </class> <!-- FrameworkDemo.ProductViewActions -->
+      </class> <!-- FrameworkDemo.BaseClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
